@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+                        <!-- using the marquee tag -->
+    <script type="text/javascript">
+        var tWidth='300px';                  // width (in pixels)
+        var tHeight='55px';                  // height (in pixels)
+        var tcolour='blue';               // background colour:
+        var moStop=true;                     // pause on mouseover (true or false)
+        var fontfamily = 'arial,sans-serif'; // font for content
+        var tSpeed=3;                        // scroll speed 
+        
+        // enter your ticker content here (use \/ and \' in place of / and ' respectively)
+        var content=' The Lion King Show   :   Start 8:00 P.M.   Every Friday';
+        
+        var cps=-tSpeed; var aw, mq; var fsz = parseInt(tHeight) - 4; function startticker(){if (document.getElementById) {var tick = '<div style="position:relative;width:'+tWidth+';height:'+tHeight+';overflow:hidden;background-color:'+tcolour+'"'; if (moStop) tick += ' onmouseover="cps=0" onmouseout="cps=-tSpeed"'; tick +='><div id="mq" style="position:absolute;right:0px;top:0px;font-family:'+fontfamily+';font-size:'+fsz+'px;white-space:nowrap;"><\/div><\/div>'; document.getElementById('ticker').innerHTML = tick; mq = document.getElementById("mq"); mq.style.right=(10+parseInt(tWidth))+"px"; mq.innerHTML='<span id="tx">'+content+'<\/span>'; aw = document.getElementById("tx").offsetWidth; lefttime=setInterval("scrollticker()",50);}} function scrollticker(){mq.style.right = (parseInt(mq.style.right)>(-10 - aw)) ?
+        mq.style.right = parseInt(mq.style.right)+cps+"px": parseInt(tWidth)+10+"px";} window.onload=startticker;
+        </script>
+
+
+
+
+    <!-- Code below is where the external style sheet was linked -->
+
+	<link href="king.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+
+
+<!-- title bar -->
+<title>Dipta Das</title>
+<a href="index.html"><img src="lionking2.jpeg"  style="float:left"  width="150" height="150"></a>
+
+
+
+</head>
+
+<h1> THE LION KING SHOW</h1>
+
+
+<div id="ticker">   
+     Scrolling text!
+</div>
+
+<body>
+
+    
+
+
+<!-- Adding audio to the page with controls -->
+
+<audio controls>
+
+<source src="Hakuna Matata.mp3" type="audio/mp3">
+
+</audio><br><br>
+
+<!-- Adding video to the page with controls -->
+<!-- Professor Salb if the video doesn't playing internet explorer please use google chrome or firefox-->
+<video  controls poster="lions.jpg">
+
+<source src="TheLionKing.mp4" type="video/mp4">
+
+<!-- adding track text to video -->
+
+
+<track src="captions.vtt" kind="subtitles" label="Captions" default >
+<p>The preview of THE LION KING SHOW.</p>
+
+</video><br>
+
+<!-- adding img to the page -->
+
+<img src="babylion.jpg" alt="img" width="450" height="300" >
+<br>
+
+<!-- wrapping the text to image -->
+
+<strong></b>In an attempt to regain his heirship to the throne, denied him by Simba’s birth, Scar goads the young Simba into exploring the forbidden Elephant Graveyard to prove his bravery. Simba encounters a pack of hyenas, which Scar hopes will kill him. The plan fails, and Scar hatches a new plan to kill both Mufasa and Simba, and make it look like an accident.</b>
+
+
+
+<!-- making boxed text for the page -->
+
+<div class="boxed">
+
+EVERYONE IS INVITED TO THE SHOW<br>
+SHOW WILL START 8:00 P.M.<br>
+PLEASE HAVE YOUR TICKET IN YOUR HAND <br>
+
+
+
+</div>
+
+
+<article>
+    <div style="background-image: url(babylion2.jpg);">
+        <br>After the murder of his father,<br>
+        a young lion prince flees his kingdom only to learn the true meaning of responsibility and bravery.<br>
+        In Africa, the lion cub Simba is the pride and joy of his parents King Mufasa and Queen Sarabi.<br>
+        Mufasa prepares Simba to be the next king of the jungle. However, <br>
+        the naive Simba believes in his envious uncle Scar that wants to kill Mufasa and Simba to become the next king.<br>
+        He lures Simba and his friend Nala to go to a forbidden place and they are attacked by hyenas but they are rescued by Mufasa.<br>
+        Then Scar plots another scheme to kill Mufasa and Simba but the cub escapes alive and leaves the kingdom believing he was responsible for the death of his father.<br>
+        Now Scar becomes the king supported by the evil hyenas while Simba grows in a distant land.<br>
+        Sometime later, Nala meets Simba and tells that the kingdom has become a creepy wasteland. What will Simba do?
+</article>
+
+
+
+
+<footer>
+    <address>
+        Lion King<br>
+        911 Broadway New York 11211 <br>
+        8:00 P.M.<br>
+        Every Friday 
+    </address>
+	  
+</footer>
+
+</body>
+
+</html>

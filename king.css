@@ -1,0 +1,75 @@
+/* adding background image to the page */
+
+body {
+
+
+font-size: 1.35em;
+
+
+text-align: center;
+
+background-image : url('lionking.jpg') ;
+
+background-position: center;
+
+background-size: cover;
+
+background-repeat: no-repeat;
+
+background-attachment: fixed;
+
+color: lightyellow;
+
+
+
+}
+
+
+
+.boxed {/* adding border to the text */
+
+    background-color: lightblue;
+    color: lightyellow;
+	align-content: center;
+	padding: 50px;
+	height: 200px;
+	width: 200px;
+	border: 25px;
+	margin: 55px;
+
+}
+
+/* Audio and Video Player Styles */
+
+audio, video { 
+    box-shadow: rgb(51, 51, 51) 8px 8px 15px; 
+    display: block; 
+    margin: 10px auto; 
+    width: 80%; 
+   }
+
+
+footer {
+    border-top: 1px solid rgb(255, 255, 205);
+    clear: left;
+    text-align: center;
+    width: 100%;
+ }
+
+
+h1{
+    color: red;
+}
+  
+article>div{
+    background-image: 20px;
+    text-align: center;
+    color: red;
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%
+    
+    
+
+
+}
